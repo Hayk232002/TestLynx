@@ -9,7 +9,12 @@
     </style>
 
     <style name="Widget.Lynx.Button" parent="Widget.MaterialComponents.Button">
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="backgroundTint">?attr/colorPrimaryDark</item>
+        <item name="android:stateListAnimator" tools:ignore="NewApi">
+            @animator/anim
+        </item>
+    </style>
+
+    <style name="Widget.Lynx.BottomAppBar" parent="Widget.MaterialComponents.BottomAppBar">
+        <item name="backgroundTint">@color/colorPrimary</item>
     </style>
 </resources>
