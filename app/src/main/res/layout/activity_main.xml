@@ -9,7 +9,8 @@
     android:gravity="bottom"
     app:umanoPanelHeight="50dp"
     app:umanoShadowHeight="2dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:clipToPadding="false">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:orientation="vertical"
@@ -17,22 +18,38 @@
         android:layout_height="match_parent"
         android:clipToPadding="false">
 
+        <LinearLayout
+            style="@style/Widget.Lynx.Backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:clipToPadding="false">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:paddingTop="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.Design.TabLayout"
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+
         <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBarLayout2"
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            style="@style/Theme.MaterialComponents.Light">
+            app:elevation="0dp"
+            android:translationZ="0dp">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
+                style="@style/Theme.MaterialComponents.Light"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="@string/app_name" />
+                android:background="@color/colorPrimary"
+                app:title="@string/app_name"
+                app:navigationIcon="@drawable/ic_menu_white_24dp"/>
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -40,12 +57,10 @@
             android:id="@+id/pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent" />
+            android:background="#FFFFFF"
+            android:elevation="1dp"
+            android:translationZ="1dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,5 +1,6 @@
 package com.example.testlynx;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +22,11 @@ public class Fragment1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_1,container,false);
+        View view = inflater.inflate(R.layout.fragment_1,container,false);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            view.findViewById(R.id.TextScrollView).setBackgroundResource(R.drawable.shape);
+        }
+        return view;
     }
 }
