@@ -33,6 +33,7 @@
                 android:layout_height="wrap_content"
                 style="@style/Widget.Design.TabLayout"
                 android:background="@color/colorPrimary"/>
+
         </LinearLayout>
 
         <com.google.android.material.appbar.AppBarLayout
@@ -48,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/colorPrimary"
-                app:title="@string/app_name"
+                app:title="Feed"
                 app:navigationIcon="@drawable/ic_menu_white_24dp"/>
 
         </com.google.android.material.appbar.AppBarLayout>

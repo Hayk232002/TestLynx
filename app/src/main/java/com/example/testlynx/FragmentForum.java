@@ -9,18 +9,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Fragment2 extends Fragment {
+public class FragmentForum extends Fragment {
+    public static final String TITLE = "Forum";
 
-    public static final String TITLE = "2";
+    public static FragmentForum newInstance() {
 
-    public static Fragment2 newInstance() {
-
-        return new Fragment2();
+        return new FragmentForum();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_2, container, false);
+        return inflater.inflate(R.layout.fragment_forum, container, false);
     }
 }

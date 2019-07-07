@@ -2,16 +2,19 @@ package com.example.testlynx;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    private static int TAB_COUNT = 2;
+    private static int TAB_COUNT = 4;
+    private Toolbar toolbar;
 
-    public ViewPagerAdapter(@NonNull FragmentManager fm) {
+    public ViewPagerAdapter(@NonNull FragmentManager fm, Toolbar toolbar) {
         super(fm);
+        this.toolbar = toolbar;
     }
 
     @NonNull
@@ -20,12 +23,15 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                return Fragment1.newInstance();
+                return FragmentFeed.newInstance();
             case 1:
-                return Fragment2.newInstance();
+                return FragmentForum.newInstance();
+            case 2:
+                return FragmentEvent.newInstance();
+            case 3:
+                return FragmentNotifications.newInstance();
+            default:return null;
         }
-
-        return null;
     }
 
     @Override
@@ -39,10 +45,12 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 //
 //        switch (position) {
 //            case 0:
-//                return Fragment1.TITLE;
+//                toolbar.setTitle("Feed");
+//                break;
 //
 //            case 1:
-//                return Fragment2.TITLE;
+//                toolbar.setTitle("Forum");
+//                break;
 //        }
 //        return super.getPageTitle(position);
 //    }

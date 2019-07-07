@@ -1,15 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\9a08e0d27244b9af3d7e613d35334caa\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.1.0-alpha07] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\32b77c6d1417baa96e01dfe6fac07f56\material-1.1.0-alpha07\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\903b12d26a16b87ab65c75a15013b994\appcompat-1.1.0-alpha05\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\c369453059780401f98905dc383c3b09\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\269ff195167ee7611bb62188aab25ff9\jetified-library-3.3.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\e0daca04bfc52540314d0615d9beb487\navigation-fragment-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\640e1cb8a0109df4f0704aee6088a29c\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\5e75dc9500a8800a19ee48edcd9ad91b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\ead4b06e93059e265d666527a3c628fc\navigation-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\8138252b08e2926be578c6ca607972da\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\6cb605609ce3e0233def045dd08f32ea\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-alpha01] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\68f88040b39416046ea9bb88e703675a\coordinatorlayout-1.1.0-alpha01\AndroidManifest.xml:17:1-22:12
@@ -28,6 +31,7 @@ MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hayk\.gradle\caches\
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\80daeaca6f036ab992d59d7f985648c0\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\ba941ec3e51f9e63a28205390b7e1196\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\12fde95cdcb09579adadf29368cbb7c4\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\049a1f81e25ea510873bc5d94fba16f4\navigation-common-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.0.0-alpha08] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\c146f2b331d7823d52ee20c4ea2ccf58\activity-1.0.0-alpha08\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\107445eed6ae7e5ad333453bb75df47d\core-1.1.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\a4800bd69aa5f1fb4a3075fb1b945104\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -42,25 +46,27 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hayk\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\da47b4dcf6f377b4b1c9b49281aff2e5\lifecycle-viewmodel-2.2.0-alpha01\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0-beta01] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\0265087a690d4bf17d0040677d5c7d74\savedstate-1.0.0-beta01\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\409068d2906cee58730bac0195da66ed\lifecycle-runtime-2.2.0-alpha01\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:3:5-35
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:4:5-35
 		INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:1-25:12
 		INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:6:5-23:19
 MERGED from [com.google.android.material:material:1.1.0-alpha07] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\32b77c6d1417baa96e01dfe6fac07f56\material-1.1.0-alpha07\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0-alpha07] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\32b77c6d1417baa96e01dfe6fac07f56\material-1.1.0-alpha07\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\c369453059780401f98905dc383c3b09\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -74,35 +80,43 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-beta01] C:\U
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0-beta01] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\107445eed6ae7e5ad333453bb75df47d\core-1.1.0-beta01\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:9:9-41
+	tools:ignore
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:13:9-48
 	android:roundIcon
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:12:9-40
 activity#com.example.testlynx.MainActivity
-ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:14:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.testlynx.Registration
+ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:22:9-50
+	android:name
+		ADDED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:22:19-47
 uses-sdk
 INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\9a08e0d27244b9af3d7e613d35334caa\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\9a08e0d27244b9af3d7e613d35334caa\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0-alpha07] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\32b77c6d1417baa96e01dfe6fac07f56\material-1.1.0-alpha07\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0-alpha07] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\32b77c6d1417baa96e01dfe6fac07f56\material-1.1.0-alpha07\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0-alpha05] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\903b12d26a16b87ab65c75a15013b994\appcompat-1.1.0-alpha05\AndroidManifest.xml:20:5-44
@@ -111,10 +125,14 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hayk\.gr
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\c369453059780401f98905dc383c3b09\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\269ff195167ee7611bb62188aab25ff9\jetified-library-3.3.1\AndroidManifest.xml:7:5-43
 MERGED from [com.sothree.slidinguppanel:library:3.3.1] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\269ff195167ee7611bb62188aab25ff9\jetified-library-3.3.1\AndroidManifest.xml:7:5-43
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\e0daca04bfc52540314d0615d9beb487\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\e0daca04bfc52540314d0615d9beb487\navigation-fragment-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\640e1cb8a0109df4f0704aee6088a29c\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\640e1cb8a0109df4f0704aee6088a29c\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\5e75dc9500a8800a19ee48edcd9ad91b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\5e75dc9500a8800a19ee48edcd9ad91b\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\ead4b06e93059e265d666527a3c628fc\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\ead4b06e93059e265d666527a3c628fc\navigation-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\8138252b08e2926be578c6ca607972da\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\8138252b08e2926be578c6ca607972da\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\6cb605609ce3e0233def045dd08f32ea\cardview-1.0.0\AndroidManifest.xml:20:5-44
@@ -151,6 +169,8 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Ha
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\ba941ec3e51f9e63a28205390b7e1196\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\12fde95cdcb09579adadf29368cbb7c4\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\12fde95cdcb09579adadf29368cbb7c4\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\049a1f81e25ea510873bc5d94fba16f4\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.0.0] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\049a1f81e25ea510873bc5d94fba16f4\navigation-common-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0-alpha08] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\c146f2b331d7823d52ee20c4ea2ccf58\activity-1.0.0-alpha08\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.0.0-alpha08] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\c146f2b331d7823d52ee20c4ea2ccf58\activity-1.0.0-alpha08\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0-beta01] C:\Users\Hayk\.gradle\caches\transforms-2\files-2.1\107445eed6ae7e5ad333453bb75df47d\core-1.1.0-beta01\AndroidManifest.xml:20:5-44

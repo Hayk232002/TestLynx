@@ -5,11 +5,14 @@ import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.ViewPager;
@@ -64,9 +67,6 @@ public class NavigationIconClickListener implements View.OnClickListener {
 
         updateIcon(view);
 
-        Log.wtf("bar", ""+height);
-        Log.wtf("bar", ""+context.getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height));
-
         final int translateY = height -
                 context.getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height);
 
@@ -77,6 +77,10 @@ public class NavigationIconClickListener implements View.OnClickListener {
         }
         animatorSet.play(animator);
         animator.start();
+
+        if(backdropShown){
+            timer();
+        }
     }
 
     private void updateIcon(View view) {
@@ -90,5 +94,33 @@ public class NavigationIconClickListener implements View.OnClickListener {
                 ((ImageView) view).setImageDrawable(openIcon);
             }
         }
+    }
+
+    private void timer(){
+        int interval = 2000;
+        Handler handler = new Handler();
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                backdropShown = !backdropShown;
+
+                animatorSet.removeAllListeners();
+                animatorSet.end();
+                animatorSet.cancel();
+
+                final int translateY = height -
+                        context.getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height);
+
+                ObjectAnimator animator = ObjectAnimator.ofFloat(sheet, "translationY", backdropShown ? translateY : 0);
+                animator.setDuration(200);
+                if (interpolator != null) {
+                    animator.setInterpolator(interpolator);
+                }
+                animatorSet.play(animator);
+                animator.start();
+            }
+        };
+
+        handler.postDelayed(runnable, interval);
     }
 }

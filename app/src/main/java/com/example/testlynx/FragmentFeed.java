@@ -1,6 +1,5 @@
 package com.example.testlynx;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,23 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Fragment1 extends Fragment {
+public class FragmentFeed extends Fragment {
+    public static final String TITLE = "Feed";
 
-    public static final String TITLE = "1";
+    public static FragmentFeed newInstance() {
 
-    public static Fragment1 newInstance() {
-
-        return new Fragment1();
+        return new FragmentFeed();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_1,container,false);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            view.findViewById(R.id.TextScrollView).setBackgroundResource(R.drawable.shape);
-        }
+        View view = inflater.inflate(R.layout.fragment_feed,container,false);
         return view;
     }
 }

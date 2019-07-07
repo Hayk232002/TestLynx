@@ -37,4 +37,7 @@ dependencies {
 //    implementation 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
 //    implementation files('libs/YouTubeAndroidPlayerApi.jar')
     implementation 'com.sothree.slidinguppanel:library:3.3.1'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+//    implementation 'com.intuit.sdp:sdp-android:1.0.5'
 }
