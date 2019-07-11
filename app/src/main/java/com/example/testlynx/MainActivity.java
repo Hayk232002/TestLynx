@@ -1,18 +1,27 @@
 package com.example.testlynx;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -21,13 +30,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
 import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity{
-    //backdrop
+    //backdrop, toolbar tabs and timer
     private final AnimatorSet animatorSet = new AnimatorSet();
     private Interpolator interpolator;
     private int height;
@@ -45,6 +56,16 @@ public class MainActivity extends AppCompatActivity{
     TextView tv;
     Toolbar toolbar;
     TabLayout tabs;
+    DrawerLayout drawerLayout;
+    CoordinatorLayout main_content;
+    ConstraintLayout chat_content;
+    AppBarLayout app_bar;
+    BottomNavigationView bottom_navigation;
+
+    FragmentFriends fragmentFriends;
+    FragmentGroups fragmentGroups;
+    FragmentManager fm;
+    Fragment active;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,20 +77,21 @@ public class MainActivity extends AppCompatActivity{
         tv = (TextView) findViewById(R.id.tv);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         tabs = (TabLayout) findViewById(R.id.tabs);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        main_content = (CoordinatorLayout) findViewById(R.id.main_content);
+        chat_content = (ConstraintLayout) findViewById(R.id.chat_content);
+        app_bar = (AppBarLayout) findViewById(R.id.app_bar);
+        bottom_navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
 
+        fragmentFriends = new FragmentFriends();
+        fragmentGroups = new FragmentGroups();
+        fm = getSupportFragmentManager();
+        fm.beginTransaction().replace(R.id.friends_container,fragmentFriends).commit();
+        active = fragmentFriends;
+
+        drawer();
         setSupportActionBar(toolbar);
         setViewPager();
-
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            findViewById(R.id.pager).setBackgroundResource(R.drawable.shape);
-//        }
-
-//        toolbar.setNavigationOnClickListener(new NavigationIconClickListener(
-//                MainActivity.this,
-//                findViewById(R.id.pager),
-//                new AccelerateDecelerateInterpolator(),
-//                MainActivity.this.getResources().getDrawable(R.drawable.ic_menu_white_24dp), // Menu open icon
-//                MainActivity.this.getResources().getDrawable(R.drawable.ic_close_white_24dp))); // Menu close icon
 
         //slidingUpPanelLayout click listener
         sp.addPanelSlideListener(new SlidingUpPanelLayout.PanelSlideListener() {
@@ -111,6 +133,7 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        //toolbar tabs click listener
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
             @Override
@@ -166,6 +189,28 @@ public class MainActivity extends AppCompatActivity{
 
             }
         });
+
+        bottom_navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.item_friends:
+                    {
+                        fm.beginTransaction().replace(R.id.friends_container,fragmentFriends).commit();
+                        active = fragmentFriends;
+                        return true;
+                    }
+
+                    case R.id.item_groups:
+                    {
+                        fm.beginTransaction().replace(R.id.friends_container,fragmentGroups).commit();
+                        active = fragmentGroups;
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
     }
 
     private void setViewPager() {
@@ -201,8 +246,16 @@ public class MainActivity extends AppCompatActivity{
         }
         animatorSet.play(animator);
         animator.start();
-    }
 
+//        if (backdropShown){
+//            app_bar.setElevation(0);
+//        }
+//
+//        else{
+//            app_bar.setElevation(8);
+//        }
+    }
+    
     public void timer(){
         timerrun = true;
         timer = new CountDownTimer(interval,100) {
@@ -231,36 +284,36 @@ public class MainActivity extends AppCompatActivity{
                 animatorSet.play(animator);
                 animator.start();
 
+//                if (backdropShown){
+//                    app_bar.setElevation(0);
+//                }
+//
+//                else{
+//                    app_bar.setElevation(8);
+//                }
+
                 interval = 2000;
                 timerrun = false;
             }
         }.start();
     }
+
+    public void drawer(){
+        drawerLayout.setScrimColor(Color.TRANSPARENT);
+        drawerLayout.setDrawerElevation(0);
+
+        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout,R.string.open,R.string.close) {
+            @Override
+            public void onDrawerSlide(View drawerView, float slideOffset) {
+                super.onDrawerSlide(drawerView, slideOffset);
+                float slideX = drawerView.getWidth() * slideOffset;
+                main_content.setTranslationX(slideX);
+                chat_content.setTranslationX(slideX);
+            }
+        };
+
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+    }
+
+
 }
-
-
-//        int interval = 2000;
-//        Handler handler = new Handler();
-//        Runnable runnable = new Runnable() {
-//            @Override
-//            public void run() {
-//                backdropShown = !backdropShown;
-//
-//                animatorSet.removeAllListeners();
-//                animatorSet.end();
-//                animatorSet.cancel();
-//
-//                final int translateY = height -
-//                        getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height);
-//
-//                ObjectAnimator animator = ObjectAnimator.ofFloat(viewPager, "translationY", backdropShown ? translateY : 0);
-//                animator.setDuration(200);
-//                if (interpolator != null) {
-//                    animator.setInterpolator(interpolator);
-//                }
-//                animatorSet.play(animator);
-//                animator.start();
-//            }
-//        };
-//
-//        handler.postDelayed(runnable, interval);

@@ -37,4 +37,8 @@
     <string name="item_event_main">Event</string>
     <string name="item_stream_main">Stream</string>
     <string name="item_notif_main">Notifications</string>
+    <string name="fragment_feed_toolbar">Feed</string>
+    <string name="friends_toolbar_title">Friends</string>
+    <string name="open">1</string>
+    <string name="close">0</string>
 </resources>

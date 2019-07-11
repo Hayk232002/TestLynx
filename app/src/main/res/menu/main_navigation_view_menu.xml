@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:icon="@drawable/ic_format_align_justify_black_24dp"
-        android:title="@string/item_feed_main"
-        app:showAsAction="withText" />
+        android:id="@+id/item_friends"
+        android:enabled="true"
+        android:icon="@drawable/ic_cloud_black_24dp"
+        android:title="Recents"
+        app:showAsAction="ifRoom" />
     <item
-        android:icon="@drawable/ic_forum_black_24dp"
-        android:title="@string/item_forum_main"
-        app:showAsAction="withText" />
-    <item
-        android:icon="@drawable/ic_event_black_24dp"
-        android:title="@string/item_event_main"
-        app:showAsAction="withText" />
-    <item
-        android:icon="@drawable/ic_linked_camera_black_24dp"
-        android:title="@string/item_stream_main"
-        app:showAsAction="withText" />
-    <item
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/item_notif_main"
-        app:showAsAction="withText" />
+        android:id="@+id/item_groups"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_white_24dp"
+        android:title="Favorites"
+        app:showAsAction="ifRoom" />
 </menu>
