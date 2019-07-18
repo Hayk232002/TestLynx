@@ -39,9 +39,9 @@
 
                     <com.google.android.material.tabs.TabLayout
                         android:id="@+id/tabs"
-                        android:layout_marginTop="?attr/actionBarSize"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="?attr/actionBarSize"
                         style="@style/Widget.Design.TabLayout"
                         android:background="@color/colorPrimary"/>
 
@@ -59,7 +59,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         android:background="@color/colorPrimary"
-                        app:title="@string/fragment_feed_toolbar"
+                        app:title="Stext chi"
                         app:navigationIcon="@drawable/ic_menu_white_24dp"/>
 
                 </com.google.android.material.appbar.AppBarLayout>

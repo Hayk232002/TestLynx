@@ -27,11 +27,6 @@
     <string name="shr_dresses_label">Dresses</string>
     <string name="shr_account_label">My Account</string>
 
-    <string name="btn_login_reg">Login</string>
-    <string name="et_login_reg">Login</string>
-    <string name="et_password_reg">Password</string>
-    <string name="tv_forgot_reg">Forgot Login Information</string>
-    <string name="tv_new_reg">New Here? Create An Account Now!</string>
     <string name="item_feed_main">Feed</string>
     <string name="item_forum_main">Forum</string>
     <string name="item_event_main">Event</string>
@@ -41,4 +36,12 @@
     <string name="friends_toolbar_title">Friends</string>
     <string name="open">1</string>
     <string name="close">0</string>
+
+<!--    login fields-->
+    <string name="tv_sign_in_login">Sign In</string>
+    <string name="et_log_login">Login</string>
+    <string name="et_password_login">Password</string>
+    <string name="tv_forgot_login">Forgot Password</string>
+    <string name="btn_log_login">Login</string>
+    <string name="tv_create_login">Don\'t Have An Account? Get One Now!</string>
 </resources>

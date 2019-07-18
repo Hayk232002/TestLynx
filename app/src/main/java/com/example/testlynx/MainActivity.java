@@ -236,8 +236,7 @@ public class MainActivity extends AppCompatActivity{
         animatorSet.cancel();
 
 
-        final int translateY = height -
-                getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height);
+        final int translateY = getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height);
 
         ObjectAnimator animator = ObjectAnimator.ofFloat(viewPager, "translationY", backdropShown ? translateY : 0);
         animator.setDuration(200);
@@ -246,14 +245,6 @@ public class MainActivity extends AppCompatActivity{
         }
         animatorSet.play(animator);
         animator.start();
-
-//        if (backdropShown){
-//            app_bar.setElevation(0);
-//        }
-//
-//        else{
-//            app_bar.setElevation(8);
-//        }
     }
     
     public void timer(){
@@ -267,30 +258,24 @@ public class MainActivity extends AppCompatActivity{
 
             @Override
             public void onFinish() {
-                backdropShown = !backdropShown;
+                if (backdropShown) {
 
-                animatorSet.removeAllListeners();
-                animatorSet.end();
-                animatorSet.cancel();
+                    backdropShown = !backdropShown;
 
-                final int translateY = height -
-                        getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height);
+                    animatorSet.removeAllListeners();
+                    animatorSet.end();
+                    animatorSet.cancel();
 
-                ObjectAnimator animator = ObjectAnimator.ofFloat(viewPager, "translationY", backdropShown ? translateY : 0);
-                animator.setDuration(200);
-                if (interpolator != null) {
-                    animator.setInterpolator(interpolator);
+                    final int translateY = getResources().getDimensionPixelSize(R.dimen.shr_product_grid_reveal_height);
+
+                    ObjectAnimator animator = ObjectAnimator.ofFloat(viewPager, "translationY", backdropShown ? translateY : 0);
+                    animator.setDuration(200);
+                    if (interpolator != null) {
+                        animator.setInterpolator(interpolator);
+                    }
+                    animatorSet.play(animator);
+                    animator.start();
                 }
-                animatorSet.play(animator);
-                animator.start();
-
-//                if (backdropShown){
-//                    app_bar.setElevation(0);
-//                }
-//
-//                else{
-//                    app_bar.setElevation(8);
-//                }
 
                 interval = 2000;
                 timerrun = false;

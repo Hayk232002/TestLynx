@@ -9,10 +9,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Widget.Lynx.Button" parent="Widget.MaterialComponents.Button">
-        <item name="android:stateListAnimator" tools:ignore="NewApi">
-            @animator/anim
-        </item>
+    <style name="Widget.Lynx.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorPrimary</item>
     </style>
 
     <style name="Widget.Lynx.BottomAppBar" parent="Widget.MaterialComponents.BottomAppBar">
@@ -25,5 +23,20 @@
 
     <style name="Widget.Shrine.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="Widget.Lynx.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColorHint">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.Lynx.Title" parent="TextAppearance.AppCompat.Display1">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Lynx.ForPass" parent="Base.TextAppearance.AppCompat.Body2">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 </resources>

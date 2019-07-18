@@ -11,7 +11,7 @@
 9-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:6:5-22:19
+11-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:6:5-26:19
 12        android:allowBackup="true"
 12-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -27,23 +27,24 @@
 18-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:11:9-35
 19        android:theme="@style/AppTheme" >
 19-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:12:9-40
-20        <activity android:name="com.example.testlynx.Login" />
-20-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:14:9-52
-20-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:14:19-40
-21        <activity android:name="com.example.testlynx.MainActivity" >
-21-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:15:9-21:20
-21-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:15:19-47
-22            <intent-filter>
-22-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:16:13-20:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:17:17-69
-23-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:17:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:19:17-77
-25-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:19:27-74
-26            </intent-filter>
-27        </activity>
-28    </application>
-29
-30</manifest>
+20        <activity android:name="com.example.testlynx.Login" >
+20-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:15:9-17:20
+20-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:15:19-40
+21        </activity>
+22        <activity android:name="com.example.testlynx.MainActivity" >
+22-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:19:9-25:20
+22-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:19:19-47
+23            <intent-filter>
+23-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:20:13-24:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:21:17-69
+24-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:21:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:23:17-77
+26-->C:\Users\Hayk\AndroidStudioProjects\TestLynx\app\src\main\AndroidManifest.xml:23:27-74
+27            </intent-filter>
+28        </activity>
+29    </application>
+30
+31</manifest>
