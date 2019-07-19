@@ -39,4 +39,9 @@
         <item name="textAllCaps">true</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
+
+    <style name="TextAppearance.Lynx.Username" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
 </resources>
