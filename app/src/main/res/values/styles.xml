@@ -36,12 +36,17 @@
     </style>
 
     <style name="TextAppearance.Lynx.ForPass" parent="Base.TextAppearance.AppCompat.Body2">
-        <item name="textAllCaps">true</item>
+        <item name="textAllCaps">false</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="TextAppearance.Lynx.Username" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Lynx.Description" parent="Base.TextAppearance.AppCompat.Subhead">
+        <item name="textAllCaps">false</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 </resources>

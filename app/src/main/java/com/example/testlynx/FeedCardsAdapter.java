@@ -4,15 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
-import com.squareup.picasso.Picasso;
 
 public class FeedCardsAdapter extends RecyclerView.Adapter<FeedCardsAdapter.ViewHolder> {
     private Context context;
@@ -30,27 +25,26 @@ public class FeedCardsAdapter extends RecyclerView.Adapter<FeedCardsAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        RequestOptions options = new RequestOptions().skipMemoryCache(true).placeholder(R.drawable.ic_launcher_background).centerCrop();
-
-        Glide.with(context).load(R.drawable.back).apply(options).into(holder.iv);
+//        RequestOptions options = new RequestOptions().skipMemoryCache(true).placeholder(R.drawable.ic_launcher_background).centerCrop();
+//        Glide.with(context).load(R.drawable.back).apply(options).into(holder.iv);
 
 //        Picasso.with(context).load(R.mipmap.ic_launcher).fit().centerCrop().into(holder.iv);
+//        holder.tv_username_card.setText(usernames[position]);
+
     }
 
     @Override
     public int getItemCount() {
-        return usernames.length;
+        return 50;
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView iv;
-        TextView tv_username;
+        TextView tv_username_card;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            iv = (ImageView) itemView.findViewById(R.id.iv);
+            tv_username_card = (TextView) itemView.findViewById(R.id.tv_username_card);
         }
     }
 }

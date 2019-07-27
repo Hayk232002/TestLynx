@@ -59,7 +59,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         android:background="@color/colorPrimary"
-                        app:title="Stext chi"
+                        app:title="@string/app_name"
                         app:navigationIcon="@drawable/ic_menu_white_24dp"/>
 
                 </com.google.android.material.appbar.AppBarLayout>
